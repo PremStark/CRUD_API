@@ -14,7 +14,7 @@ app.get('/', (req , res) => {
     res.send("Hello from Node API server Prem");
 });
 
-mongoose.connect("mongodb+srv://admin:Prem_2003*@backenddb.grqhu.mongodb.net/Node-API?retryWrites=true&w=majority&appName=BackendDB"    
+mongoose.connect("mongodb+srv://admin:<password>@backenddb.grqhu.mongodb.net/Node-API?retryWrites=true&w=majority&appName=BackendDB"    
 ).then(() => {
     console.log("Connected to database!");
     app.listen(5173 , () => {
